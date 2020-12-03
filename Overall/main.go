@@ -84,7 +84,7 @@ func main() {
 				fmt.Println("Normal, Grave, Blanc, Rouge, Vert, Jaune, Bleu, Rose, Cyan, Noir\nRouge Sombre, Jaune Sombre, Vert Sombre, Bleu Sombre, Violet Sombre, Cyan Sombre ")
 			case 2:
 				fmt.Println(colorYellowSombre + "\nVoici les fonds disponible : ")
-				fmt.Println("Fond Gris, Fond Blanc, Fond Rouge, Fond Vert, Fond Jaune, Fond Bleu, Fond Violet, Fond Cyan, Fond Noir, Fond Rose-Rouge, Fond Bleu-Ciel, Fond Rose")
+				fmt.Println("Aucun, Fond Gris, Fond Blanc, Fond Rouge, Fond Vert, Fond Jaune, Fond Bleu, Fond Violet, Fond Cyan, Fond Noir, Fond Rose-Rouge, Fond Bleu-Ciel, Fond Rose")
 			default:
 				fmt.Println(soulignerGrave + colorRedSombre + "\nChoisissez 1 ou 2" + normal)
 				return
@@ -148,14 +148,14 @@ func main() {
 		fond = scanner.Text()
 		if fond == "Aide" || fond == "aide" {
 			fmt.Println(colorYellowSombre + "\nVoici les fonds disponible : ")
-			fmt.Println("Normal, Fond Gris, Fond Blanc, Fond Rouge, Fond Vert, Fond Jaune, Fond Bleu, Fond Violet, Fond Cyan, Fond Noir, Fond Rose-Rouge, Fond Bleu-Ciel, Fond Rose")
+			fmt.Println("Aucun, Fond Gris, Fond Blanc, Fond Rouge, Fond Vert, Fond Jaune, Fond Bleu, Fond Violet, Fond Cyan, Fond Noir, Fond Rose-Rouge, Fond Bleu-Ciel, Fond Rose")
 			fmt.Print(grave + colorGreen + "\nQuelle fond choisissez-vous : " + normal)
 			scanner = bufio.NewScanner(os.Stdin)
 			scanner.Scan()
 			fond = scanner.Text()
 		}
 		switch {
-		case fond == "normal" || fond == "Normal" || fond == "NORMAL":
+		case fond == "aucun" || fond == "Aucun" || fond == "AUCUN" || fond == "":
 			fond = ""
 		case fond == "Fond Blanc" || fond == "Fond blanc" || fond == "fond blanc" || fond == "fond Blanc" || fond == "Fondblanc" || fond == "FondBlanc" || fond == "fondblanc" || fond == "fondBlanc":
 			fond = fondBlanc
