@@ -1,7 +1,6 @@
 package main
 
 import (
-	asciiart ".."
 	"bufio"
 	"fmt"
 	"os"
@@ -244,7 +243,7 @@ func main() {
 
 				for _, w := range v {
 
-					result += asciiart.ScanLine(typeOfWriting, 1+int(w-32)*9+i)
+					result += Scanner(typeOfWriting, 1+int(w-32)*9+i)
 
 				}
 				fmt.Println(fond+couleur, result)
@@ -259,7 +258,7 @@ func main() {
 
 			for _, v := range text {
 
-				result += asciiart.ScanLine(typeOfWriting, 1+int(v-32)*9+i)
+				result += Scanner(typeOfWriting, 1+int(v-32)*9+i)
 
 			}
 			fmt.Println(fond+couleur, result)
@@ -270,4 +269,32 @@ func main() {
 
 	fmt.Println(normal)
 
+}
+
+func Scanner(typeOfWriting string, num int) string {
+
+	var file, err = os.Open(typeOfWriting)
+	var scanner = bufio.NewScanner(file)
+	var lineScan = 0
+	var line = ""
+
+	if err != nil {
+
+		fmt.Println("Can't open file")
+
+	}
+
+	for scanner.Scan() {
+
+		if lineScan == num {
+
+			line = scanner.Text()
+
+		}
+
+		lineScan++
+
+	}
+
+	return line
 }
