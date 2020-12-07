@@ -1,0 +1,62 @@
+	Problème pour print le texte à l'horizontale: ok
+ajouter chaque argument (os.Args[2:]) avec un for range sur s
+ajouter un string " " entre chaque argument sinon c nul
+
+
+
+	Problème pour savoir quelle ligne choisir: ok
+standard.txt = écrit dans l'ordre ascii
+-> calcul de génie à trouver pour donner la ligne ou commence le caractère
+
+1 + (lettre - 32) * 9 + i
+lettre = élément du for range (v)
+32 = premier caractère défini dans le standard.txt (à savoir espace " ")
+9 = nombre de lignes par caractère + \n
+
+
+
+	Problème pour lire le standard.txt: ok
+utiliser os.Open + bufio.NewScanner + bufio.Text
+créer une fonction à part
+
+
+
+	Problème du \n: ok
+détecter le \n
+le traiter
+un peu de logique = for range sur le string qui contient le \n?
+
+-> utiliser la fonction student.string()
+for range sur s
+pour chaque 'n', check si le caractère précédent est un '\' (noté '\\')
+
+
+
+	Problème des guillemets (") multiples:
+for range pour trouver le dernier guillemet
+
+
+
+	Problème de la taille du terminal: ok
+Agrandir la fenêtre dans les propriétés!
+
+
+
+	Problème d'utilisation du print pour l'output: ok
+Le println ne permet pas d'ecrire dans le fichier , trouver un autre print ou autre solution
+
+
+
+	Problème du scanner : ok 
+Ne fonctionne pas si on change de style d'ecriture , trouver un moyen pour choisir le filename
+
+
+
+	Problème du & : ok
+Detecte comme une commande système , vu avec Louis existe seulement sur windows: 
+	-test sur linux fonctionne
+
+
+
+	Problème de fermeture de fichier : ok
+Utilisation du bufio.Close
