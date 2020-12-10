@@ -45,9 +45,9 @@ func Justify(args []string) {
 
 		justifyJustify(text, result, format, terminalWidth)
 
-	} else {
+	} else if align == "left" || align == "right" || align == "center" {
 
-		if newlineCheck(text) { // == true
+		if newlineCheck(text) == true {
 
 			var splitText = strings.Split(text, "\\n")
 
@@ -91,7 +91,7 @@ func Justify(args []string) {
 				}
 			}
 
-		} else { // if newlineCheck(text) == false
+		} else if newlineCheck(text) == false {
 
 			for i := 0; i < 8; i++ {
 

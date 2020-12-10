@@ -47,7 +47,7 @@ func classicUsage()  {
 
 func fsUsage()  {
 	fmt.Println("USAGE: ./fs.exe \"text\" <format>")
-	fmt.Println("LIST:  standard shadow thinkertoy")
+	fmt.Println("LIST:  standard shadow thinkertoy doom")
 }
 
 func colorUsage()  {
@@ -57,11 +57,11 @@ func colorUsage()  {
 
 func outputUsage()  {
 	fmt.Println("USAGE: ./output.exe \"text\" <format> --output=<output>.txt")
-	fmt.Println("LIST:  standard shadow thinkertoy")
+	fmt.Println("LIST:  standard shadow thinkertoy doom")
 }
 
 func justifyUsage()  {
 	fmt.Println("USAGE: ./justify.exe \"text\" <format> --align=<align>")
-	fmt.Println("LIST:  standard shadow thinkertoy")
+	fmt.Println("LIST:  standard shadow thinkertoy doom")
 	fmt.Println("LIST:  right left center justify")
 }

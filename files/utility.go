@@ -67,6 +67,9 @@ func formatCheck(args []string) bool {
 	case "thinkertoy":
 		return true
 
+	case "doom":
+		return true
+
 	}
 
 	return false
@@ -306,7 +309,7 @@ func justifyJustify(text string, result string, format string, terminalWidth int
 func terminalWidth() int {
 
 	//enters a command to retrieve information about the terminal
-	var out1, err1 = exec.Command("tput", "cols").Output()
+	var out1, err1 = exec.Command("tput", "cols").Output() //powershell.exe -noprofile -command $host.ui.rawui.WindowSize.width ou MODE
 	//converts the needed information into a string
 	var out2 = strings.TrimSuffix(string(out1), "\n")
 	//converts the string into an int

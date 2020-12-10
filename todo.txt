@@ -1,3 +1,5 @@
+<problème>
+
 	Problème pour print le texte à l'horizontale: ok
 ajouter chaque argument (os.Args[2:]) avec un for range sur s
 ajouter un string " " entre chaque argument sinon c nul
@@ -60,3 +62,9 @@ Detecte comme une commande système , vu avec Louis existe seulement sur windows
 
 	Problème de fermeture de fichier : ok
 Utilisation du bufio.Close
+
+	Problème de taille de terminal : ok
+Utilisation powershell.exe -noprofile -command $host.ui.rawui.WindowSize.width ou MODE sous windows
+Utilisation exec.command et trimSufffix sous Linux
+
+</problème>
