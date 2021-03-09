@@ -1,4 +1,4 @@
-## ascii-art
+## Ascii-art
 
 ### Objectives
 
@@ -14,6 +14,14 @@ This project will help you learn about :
 - Ways to output data.
 - Manipulation of strings.
 - Manipulation of structures.
+
+### How to use it:
+ ```
+ git clone https://github.com/x33lyS/ascii-art-web.git
+ 
+ go build main.go
+ ```
+Click on the new main.exe
 
 ### Instructions
 
