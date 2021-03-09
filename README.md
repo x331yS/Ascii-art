@@ -17,11 +17,14 @@ This project will help you learn about :
 
 ### How to use it:
  ```
- git clone https://github.com/x33lyS/ascii-art-web.git
- 
- go build main.go
+ git clone https://github.com/x33lyS/ascii-art.git
  ```
-Click on the new main.exe
+Choose your favorite files : Overall,Classic,Output...<br>
+And build it :
+```
+ go build Overall.go
+```
+Click on the new Overall.exe
 
 ### Instructions
 
